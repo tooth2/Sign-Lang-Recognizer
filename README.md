@@ -24,8 +24,12 @@ The identity block is the standard block used in ResNets, and corresponds to the
  ![conv block](images/convblock_kiank.png)
  
  ### 3 - Building your first ResNet model (50 layers)
- You now have the necessary blocks to build a very deep ResNet. The following figure describes in detail the architecture of this neural network. "ID BLOCK" in the diagram stands for "Identity block," and "ID BLOCK x3" means you should stack 3 identity blocks together.
+ResNet50 is a powerful model for image classification when it is trained for an adequate number of iterations. The following figure describes in detail the architecture of this neural network. "ID BLOCK" in the diagram stands for "Identity block," and "ID BLOCK x3" means you should stack 3 identity blocks together.
 ![resnet50](images/resnet_kiank.png)
+```
+model = ResNet50(input_shape = (64, 64, 3), classes = 6)
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+```
 
 ### Take aways
 - Very deep "plain" networks don't work in practice because they are hard to train due to vanishing gradients.
