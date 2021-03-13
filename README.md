@@ -1,5 +1,8 @@
 # Sign-Lang-Recognizer
 American Sign Language Recognizer
+- Implement a fully functioning ConvNet using TensorFlow
+- Implement a fully functioning Residual Net(ResNet) using TensorFlow
+- Build and train ConvNet/Resnet in TensorFlow for a classification problem in the American Sign Language context
 
 ## 1. Dataset
 ![Sign Lang](images/signs_data_kiank.png)
